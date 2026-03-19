@@ -83,7 +83,7 @@
     ((n-1)!!)/(n!!) & quad (n "为正奇数")
   ) $
 )
-
+ 
 #conclusion("(B)", "Beta 函数与 Gamma 函数关系", 
   $ B(p, q) = integral_0^1 x^(p-1) (1-x)^(q-1) dif x = (Gamma(p)Gamma(q))/Gamma(p+q) $
 )
