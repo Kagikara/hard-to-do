@@ -61,21 +61,21 @@
 #v(0.5em)
 #line(length: 100%, stroke: 0.5pt + gray)
 
-#conclusion("(G)", "高斯积分 (Gaussian Integral)", 
-  $ integral_0^(+oo) e^(-x^2) dif x = sqrt(pi) / 2 $
-)
+// #conclusion("(G)", "高斯积分 (Gaussian Integral)", 
+//   $ integral_0^(+oo) e^(-x^2) dif x = sqrt(pi) / 2 $
+// )
 
-#conclusion("(D)", "Dirichlet 积分", 
-  $ integral_0^(+oo) (sin x) / x dif x = pi / 2 $
-)
+// #conclusion("(D)", "Dirichlet 积分", 
+//   $ integral_0^(+oo) (sin x) / x dif x = pi / 2 $
+// )
 
-#conclusion("(L)", "对数正弦积分 (Log-Sine Integral)", 
-  $ integral_0^(pi/2) ln sin x dif x = - pi/2 ln 2 $
-)
+// #conclusion("(L)", "对数正弦积分 (Log-Sine Integral)", 
+//   $ integral_0^(pi/2) ln sin x dif x = - pi/2 ln 2 $
+// )
 
-#conclusion("(F)", "Fresnel 积分", 
-  $ integral_0^(+oo) sin x^2 dif x = 1/2 sqrt(pi/2) $
-)
+// #conclusion("(F)", "Fresnel 积分", 
+//   $ integral_0^(+oo) sin x^2 dif x = 1/2 sqrt(pi/2) $
+// )
 
 #conclusion("(W)", "Wallis 公式", 
   $ integral_0^(pi/2) sin^n x dif x = cases(
@@ -83,22 +83,34 @@
     ((n-1)!!)/(n!!) & quad (n "为正奇数")
   ) $
 )
- 
-#conclusion("(B)", "Beta 函数与 Gamma 函数关系", 
-  $ B(p, q) = integral_0^1 x^(p-1) (1-x)^(q-1) dif x = (Gamma(p)Gamma(q))/Gamma(p+q) $
-)
-
-#conclusion("(Ga)", "Gamma 函数特例", 
-  $ Gamma(n+1)=integral_0^(+oo) x^n e^(-x) dif x = n! $
-)
 
 #conclusion("(Art)", " ", 
   $ integral_RR (dif x)/(x^2+k)=1/sqrt(k)arctan(x/sqrt(k)),k in CC^times $
 )
+ 
+#conclusion("(B)", "Beta 函数", 
+  $ B(p, q) = integral_0^1 x^(p-1) (1-x)^(q-1) dif x = (Gamma(p)Gamma(q))/Gamma(p+q)\
+  B(p,q)=2integral_0^(pi/2)cos^(2p-1)phi sin^(2q-1)phi dif phi "  (let"x=cos^2 phi)\
+  B(p,q)=(Gamma(p)Gamma(q))/Gamma(p+q) $
+)
+
+#conclusion("(Ga)", "Gamma 函数", 
+  $ Gamma(t)=integral_0^(+oo) x^(t-1) e^(-x) dif x ,\
+   s Gamma(s)=Gamma(s+1)\
+    Gamma(n+1)=integral_0^(+oo) x^n e^(-x) dif x = n!\
+    Gamma(t)=2integral_0^oo x^(2t-1)e^(-x^2)dif x, Gamma(1/2)=sqrt(pi)\
+    Gamma(s)Gamma(1-s)=pi/sin(pi s)\
+    "(Stirling)    "Gamma(s+1)=sqrt(2pi s)(s/e)^s e^(theta/12s),0<theta<1
+     $
+)
+
+
 
 #v(1em)
 #line(length: 100%, stroke: 0.5pt + gray)
 
+#colbreak()
+#colbreak()
 // --- 后面接原来的“习题 B”部分 ---
 
 == 不定积分计算
