@@ -141,12 +141,12 @@
 #v(0.5em)
 #prob("3")[$ integral_0^(+oo) 1 / (1 + x^4) dif x $]
 #prob("9")[$ integral_(-oo)^(+oo) 1 / (x^2 + x + 1)^2 dif x $]
-#prob("12")[$ integral_(-1)^1 1 / ((2 - x)^2 sqrt(1 - x^2)) dif x $]
+#prob("12")[$ integral_(-1)^1 1 / ((2 - x)^2 sqrt(1 - x^2)) dif x, J(a)=integral_(-pi/2)^(pi/2)1/(a-sin x)dif x $]
 #prob("13")[$ integral_0^1 (arcsin sqrt(x)) / (x (1 - x)) dif x $]
 #prob("18")[$ integral_0^(+oo) (log x) / (x^2 + a^2) dif x $]
 #prob("20")[$ integral_(-oo)^(+oo) 1 / (a x^2 + 2 b x + c)^n dif x, quad a c - b^2 > 0 $]
 #prob("25")[$ integral_0^(+oo) 1 / ((x + 1) dots.h (x + n)) dif x $]
-#prob("26")[$ integral_0^(2 pi) log sin x dif x $]
+#prob("26")[$ integral_0^(pi/2) log sin x dif x $]
 
 #v(1em)
 #line(length: 100%, stroke: 0.5pt + gray)
